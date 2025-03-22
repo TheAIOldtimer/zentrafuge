@@ -6,6 +6,9 @@
   <title>Zentrafuge – Reminding us we're human</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Inter', sans-serif;
       background-color: #f4f6f8;
@@ -18,37 +21,39 @@
       text-align: center;
     }
     nav a {
+      display: inline-block;
       color: white;
       text-decoration: none;
-      margin: 0 1rem;
+      margin: 0.5rem 1rem;
       font-weight: 600;
+      font-size: 1rem;
     }
     main {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 3rem 1rem;
+      padding: 2rem 1rem;
       min-height: 80vh;
       text-align: center;
     }
     h1 {
-      font-size: 4rem;
+      font-size: 2.5rem;
       margin-bottom: 0.5rem;
       font-weight: 700;
       letter-spacing: 1px;
     }
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       color: #444;
       margin-bottom: 2rem;
       font-style: italic;
     }
     p {
-      font-size: 1.1rem;
-      max-width: 700px;
+      font-size: 1.05rem;
+      max-width: 90%;
       line-height: 1.6;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
     .cta {
       background-color: #0d6efd;
@@ -63,35 +68,14 @@
     }
     .footer {
       text-align: center;
-      margin-top: 4rem;
+      margin-top: 3rem;
       font-size: 0.9rem;
       color: #888;
       padding-bottom: 1rem;
     }
-  </style>
-</head>
-<body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="members.html">Members</a>
-    <a href="whitepaper.html">White Paper</a>
-  </nav>
-  <main>
-    <h1>ZENTRAFUGE</h1>
-    <h2>Reminding us we're human.</h2>
-    <p>
-      <strong>It is our aim</strong> to humanise the digital age by creating a calm, meaningful space for people to reconnect—with themselves, with others, and with what really matters.
-    </p>
-    <p>
-      We believe technology should support our humanity, not replace it. As the world accelerates around us, Zentrafuge offers a moment of pause—a gentle prompt to reflect, smile, or simply breathe.
-    </p>
-    <p>
-      We're not trying to outpace the future. We're building a place where people can catch up with themselves in the present.
-    </p>
-    <a class="cta" href="mailto:zentrafuge@outlook.com">Join Us</a>
-    <div class="footer">
-      &copy; 2025 Zentrafuge. All rights reserved.
-    </div>
-  </main>
-</body>
-</html>
+    @media screen and (min-width: 768px) {
+      h1 {
+        font-size: 3.5rem;
+      }
+      h2 {
+        font-size:
