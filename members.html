@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zentrafuge – Members</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
@@ -31,12 +31,12 @@
       text-align: center;
     }
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
     }
     p {
       max-width: 600px;
-      font-size: 1rem;
+      font-size: 1.1rem;
       margin-bottom: 2rem;
     }
     input[type="text"] {
@@ -60,4 +60,47 @@
     #welcomeMessage {
       font-size: 1.2rem;
       font-weight: 600;
-      color: #0d
+      color: #0d6efd;
+      margin-top: 1rem;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #888;
+      padding-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="members.html">Members</a>
+    <a href="whitepaper.html">White Paper</a>
+  </nav>
+  <main>
+    <h1>Members Portal</h1>
+    <p>If you've been invited or feel deeply called to help shape Zentrafuge, enter your name below and introduce yourself. We’re not recruiting—we’re resonating.</p>
+    <input type="text" id="memberName" placeholder="Your name..." />
+    <br />
+    <button onclick="submitName()">Submit</button>
+    <div id="welcomeMessage"></div>
+    <div class="footer">
+      &copy; 2025 Zentrafuge. All rights reserved.
+    </div>
+  </main>
+  <script>
+    function submitName() {
+      const nameInput = document.getElementById("memberName");
+      const name = nameInput.value.trim();
+      const messageBox = document.getElementById("welcomeMessage");
+      if (name) {
+        messageBox.textContent = `We see you, ${name}. You're part of the movement now.`;
+        nameInput.value = "";
+      } else {
+        messageBox.textContent = "Please enter your name.";
+      }
+    }
+  </script>
+</body>
+</html>
