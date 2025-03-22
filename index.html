@@ -35,13 +35,13 @@
       line-height: 1.6;
       margin-bottom: 2rem;
     }
-    input[type="email"] {
+    input[type="email"], textarea {
       padding: 0.75rem;
       width: 70%;
       max-width: 300px;
       border: 1px solid #ccc;
       border-radius: 5px;
-      margin-right: 0.5rem;
+      margin-bottom: 1rem;
     }
     button {
       padding: 0.75rem 1.25rem;
@@ -72,9 +72,14 @@
       In a world full of noise, isolation, and disconnection, Zentrafuge is building a calm, intelligent space for real humans to gently reconnect—with themselves, and each other. <br><br>
       One quiet spark at a time.
     </p>
-    <form>
-      <input type="email" placeholder="Your email" required />
-      <button type="submit">Notify Me</button>
+    <form action="https://formspree.io/f/xldjbeyd" method="POST">
+      <label>
+        <input type="email" name="email" placeholder="Your email" required />
+      </label><br>
+      <label>
+        <textarea name="message" placeholder="Optional message..."></textarea>
+      </label><br>
+      <button type="submit">Send</button>
     </form>
     <p class="pangolin">
       🦔 A portion of future profits will go toward pangolin conservation—because humans aren’t the only ones who need saving.
