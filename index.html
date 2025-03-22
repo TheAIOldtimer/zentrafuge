@@ -10,13 +10,26 @@
       font-family: 'Inter', sans-serif;
       background-color: #f4f6f8;
       color: #333;
+      margin: 0;
+    }
+    nav {
+      background-color: #0d6efd;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+    }
+    main {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 3rem 1rem;
-      margin: 0;
-      min-height: 100vh;
+      min-height: 80vh;
       text-align: center;
     }
     h1 {
@@ -46,13 +59,29 @@
       text-decoration: none;
     }
     .footer {
+      text-align: center;
       margin-top: 4rem;
       font-size: 0.9rem;
       color: #888;
+      padding-bottom: 1rem;
+    }
+    .input-section {
+      margin-top: 2rem;
+    }
+    input[type="text"] {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 0.5rem;
     }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="members.html">Members</a>
+  </nav>
   <main>
     <h1>Zentrafuge</h1>
     <h2>Technology reminding us we're human.</h2>
